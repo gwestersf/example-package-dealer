@@ -25,7 +25,7 @@ struct Deal: ParsableCommand {
         var description: String {
             switch self {
             case .notEnoughCards:
-                return "Not enough cards"
+                return "Not enough cards in the deck. Enter a number 52 or below."
             }
         }
     }

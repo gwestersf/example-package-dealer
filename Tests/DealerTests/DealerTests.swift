@@ -48,7 +48,7 @@ final class DealerTests: XCTestCase {
         let (status, output, error) = try execute(with: ["100"])
         XCTAssertNotEqual(status, EXIT_SUCCESS)
         XCTAssertEqual(output, "")
-        XCTAssertEqual(error, "Error: Not enough cards\n")
+        XCTAssertEqual(error, "Error: Not enough cards in the deck. Enter a number 52 or below.\n")
     }
 
     /// Returns path to the built products directory.
